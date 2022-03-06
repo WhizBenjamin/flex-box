@@ -1,0 +1,42 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+}
+
+
+/********TAG SELECTORS********/
+body {
+    background: white;
+}
+
+
+
+/********CLASS SELECTORS********/
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.box {
+    height: 100px;
+    min-width: 100px;
+}
+
+.one {
+    background: red;
+}
+
+.two {
+    background: blue;
+}
+
+.three {
+    background: green;
+}
+
+/********ID SELECTORS********/
