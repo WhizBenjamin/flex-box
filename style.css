@@ -25,24 +25,25 @@ body {
 
 .box {
     height: 100px;
-    min-width: 100px;
-}
+    width: 320px;
+} 
+/*Note that width replaces min-width from previous commit and that each box is 1/3rd(320px) of the max-width(960px).*/
 
 .one {
     background: red;
-    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .two {
     background: blue;
-    flex-grow: 2;
+    flex-shrink: 2;
 }
 
 .three {
     background: green;
-    flex-grow: 3;
+    flex-shrink: 3;
 }
 
-/*Flex grow property is used here and the higher the number, the higher the growth rate.*/
+/*Flex-shrink property is used here and the higher the number, the higher rate it shrinks.*/
 
 /********ID SELECTORS********/
