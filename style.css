@@ -6,7 +6,7 @@
 
 /********TAG SELECTORS********/
 body {
-    background: white;
+    background: #eee;
 }
 
 
@@ -20,7 +20,8 @@ body {
 
 .flex-container {
     display: flex;
-}
+    background: white;
+} 
 
 .box {
     height: 100px;
@@ -29,14 +30,19 @@ body {
 
 .one {
     background: red;
+    flex-grow: 1;
 }
 
 .two {
     background: blue;
+    flex-grow: 2;
 }
 
 .three {
     background: green;
+    flex-grow: 3;
 }
+
+/*Flex grow property is used here and the higher the number, the higher the growth rate.*/
 
 /********ID SELECTORS********/
