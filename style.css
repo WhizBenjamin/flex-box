@@ -21,29 +21,26 @@ body {
 .flex-container {
     display: flex;
     background: white;
+    flex-wrap: wrap;
 } 
 
 .box {
     height: 100px;
-    width: 320px;
+    min-width: 200px;
+    flex-grow: 1;
 } 
-/*Note that width replaces min-width from previous commit and that each box is 1/3rd(320px) of the max-width(960px).*/
 
 .one {
     background: red;
-    flex-shrink: 1;
 }
 
 .two {
     background: blue;
-    flex-shrink: 2;
 }
 
 .three {
     background: green;
-    flex-shrink: 3;
 }
 
-/*Flex-shrink property is used here and the higher the number, the higher rate it shrinks.*/
 
 /********ID SELECTORS********/
