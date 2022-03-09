@@ -23,12 +23,17 @@ body {
     background: white;
     flex-wrap: wrap;
 } 
+/**/
 
 .box {
     height: 100px;
-    min-width: 200px;
-    flex-grow: 1;
+    flex-basis: 200px;
 } 
+/*NOTE: Flex-basis; similar to min-width as it defines a starting width for each of our elements.
+        You would notice the white padding and the reason the box doesn't grow into it is simply because flex-grow was not applied.
+        The difference between flex-basis and min-width is that the former works in a relatable way to shrinking, 
+            while the latter shrinks but won't shrink beyond the assigned minimum width.
+*/
 
 .one {
     background: red;
@@ -41,6 +46,18 @@ body {
 .three {
     background: green;
 }
+/*NOTE: You can apply flex-basis to each individual box to det different starting width.
+        You can also add a flex grow property to the .box class,
+            this will make the individual boxes grow at their determined starting width in relation to the flex-basis.
+*/
 
+/*NOTE: Flex-grow, flex-shrink and flex-basis can all be combined into one notation.
+        This property is known as flex: it funtions as below,
+            flex: 1 0 200px;
+            Where the first digit reps grow, the second shrink and the third basis.
+        Another way to incorporate the flex property is,
+            flex: 1;
+            This sets the grow and shrink to 1 and basis to 0 by default.
+         */
 
 /********ID SELECTORS********/
