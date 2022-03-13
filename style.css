@@ -23,19 +23,21 @@ body {
     background: white;
     height: 600px;
     flex-wrap: wrap;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
 } 
 /*NOTE: Applying the flex-flow property to the flex container enables it control the flow of all flex elements within it.
         Flex-flow: row - main axis = horizontal & cross axis = vertical.
+            row-reverse - reverses the order of items and puts them to the flex end.
         Flex-flow: column - main axis = vertical & cross axis = horiztonal.
+            column-reverse - reverses the order of items and puts them to the flex end.
         Justify-content applies to the main axis.
         Align-items applies to the cross axis.
 */
 
 .box {
-    height: 100px;
+    width: 100px;
     flex: 0 0 100px;
 } 
 /*NOTE: Flex-basis; similar to min-width as it defines a starting width for each of our elements.
