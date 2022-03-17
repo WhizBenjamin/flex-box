@@ -7,6 +7,7 @@
 /********TAG SELECTORS********/
 body {
     background: #eee;
+    color: #333;
 }
 
 
@@ -70,6 +71,28 @@ body {
             flex: 1;
             
             This sets the grow and shrink to 1 and basis to 0 by default.
-         */
+*/
+
+/* ELEMENT ORDER */
+
+.one {order: 0;}
+.two {order: -1;}
+.three {order: 2;}
+.four {order: 1;}
+/*NOTE: The number here determines what element comes first. from -infinity to +infinity. */
+
 
 /********ID SELECTORS********/
+
+#blocks {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+#blocks div {
+    flex: 0 0 100px;
+    padding: 40px 0;
+    text-align: center;
+    background: #ccc;
+}
